@@ -2,9 +2,7 @@
 
 void update(int *a,int *b) {
     *a +=*b; // Because here *a = *a+*b
-    *b= abs(*a-2*(*b));/* Because here replace *a = *a+*b and subtract with *b
-    then *b will have the value of (*a-*b)
-    */
+    *b= abs(*a-2*(*b));/* Because here *b = ((*a+*b) - 2*(*b))*/
 }
 
 int main() {
